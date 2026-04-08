@@ -36,6 +36,9 @@
     --font-30: 26px;
     --font-24: 21px;
   }
+  main {
+    padding-top: 132px;
+  }
   .header-mobile-trigger {
     display: flex;
   }
@@ -200,11 +203,13 @@
     font-weight: 400;
     display: block;
   }
+  .hero-slide {
+    height: 600px;
+  }
 }
 
 @media (max-width: 991px) {
   :root {
-    --font-80: 45px;
     --font-50: 32px;
     --font-42: 28px;
     --font-38: 26px;
@@ -216,7 +221,6 @@
 
 @media (max-width: 767px) {
   :root {
-    --font-80: 38px;
     --font-50: 28px;
     --font-42: 26px;
     --font-38: 24px;
@@ -230,7 +234,6 @@
 
 @media (max-width: 575px) {
   :root {
-    --font-80: 32px;
     --font-50: 26px;
   }
 }

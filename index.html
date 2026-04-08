@@ -8,6 +8,7 @@
     <meta name="description"
         content="AZTechLab provides cutting-edge technology solutions, premium web development, and digital innovation.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,11 +30,11 @@
                         <div class="top-info-bar">
                             <div class="info-item">
                                 <img src="./media-images/phone-icon.svg" alt="Phone">
-                                <span>610 622 3298</span>
+                                <span><a href="tel:6106223298">610 622 3298</a></span>
                             </div>
                             <div class="info-item">
                                 <img src="./media-images/location-icon.svg" alt="Location">
-                                <span>409 Shadeland Avenue Drexel Hill, PA 19026</span>
+                                <span><a href="">409 Shadeland Avenue Drexel Hill, PA 19026</a></span>
                             </div>
                         </div>
                         <div class="navigation-wrapper">
@@ -121,20 +122,59 @@
             </div>
         </div>
     </header>
-
-
-
     <main>
-        <!-- Hero-Section -->
-        <section>
-            <div class="hero-main">
-                <div class="az-container">
-                    <h1>hello</h1>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide hero-slide"
+                        style="background-image: url('./media-images/hero-banner-image.png');">
+                        <div class="az-container">
+                            <div class="hero-content">
+                                <h1>Precision Beyond Satisfaction</h1>
+                                <p>Delivering advanced dental care with precision, innovation, and a commitment to
+                                    long-lasting patient trust.</p>
+                                <div class="common-arrow-btn">
+                                    <a href="#" class="btn-read-more">
+                                        <img src="./media-images/arrow-icon.svg" alt="">
+                                        <span>Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 (Example) -->
+                    <div class="swiper-slide hero-slide"
+                        style="background-image: url('./media-images/hero-banner-image.png');">
+                        <div class="az-container">
+                            <div class="hero-content">
+                                <h1>Innovative Dental Solutions</h1>
+                                <p>Leading the way in digital dentistry with state-of-the-art technology and expert
+                                    craftsmanship.</p>
+                                <div class="hero-btn-wrapper">
+                                    <a href="#" class="btn-read-more">
+                                        <img src="./media-images/arrow-icon.svg" alt="">
+                                        <span>Read more</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Pagination -->
+                <div class="hero-pagination"></div>
             </div>
         </section>
+        <!--  -->
     </main>
-
+<footer>
+    <div class="footer-main">
+        <div class="az-container">
+            
+        </div>
+    </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
