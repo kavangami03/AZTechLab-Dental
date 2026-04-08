@@ -74,6 +74,23 @@ subToggles.forEach(toggle => {
         const parent = this.parentElement;
         const subMenu = parent.querySelector('.mobile-sub-menu');
         
+        // Close other open submenus (True Accordion Behavior)
+        const otherOpen = document.querySelectorAll('.has-mobile-submenu.is-open');
+        otherOpen.forEach(openItem => {
+            if (openItem !== parent) {
+                const openSub = openItem.querySelector('.mobile-sub-menu');
+                gsap.to(openSub, {
+                    height: 0,
+                    duration: 0.3,
+                    ease: "power2.inOut",
+                    onComplete: () => {
+                        openSub.style.display = 'none';
+                        openItem.classList.remove('is-open');
+                    }
+                });
+            }
+        });
+
         if (parent.classList.contains('is-open')) {
             gsap.to(subMenu, {
                 height: 0,
