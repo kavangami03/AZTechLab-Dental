@@ -135,3 +135,96 @@ const clientSlider = new Swiper('.client-slider', {
         }
     }
 });
+
+// Any issue from GSAP Remove this section
+// Scroll Reveal Animations
+const revealOnScroll = () => {
+    // 1. Target all Sections
+    const sections = document.querySelectorAll('section, footer');
+    
+    sections.forEach(section => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+                start: "top 85%",
+                toggleActions: "play none none none"
+            }
+        });
+
+        // Auto-animate Section Title if exists
+        const title = section.querySelector('.section-title');
+        if (title) {
+            tl.from(title, {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
+            });
+        }
+
+        // Auto-animate Content Items (Grids, Columns, etc.)
+        const contentItems = section.querySelectorAll('.product-col, .blog-column, .about-item, .client-logo-box, .footer-col, .footer-banner-content > *');
+        if (contentItems.length > 0) {
+            tl.from(contentItems, {
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power2.out"
+            }, title ? "-=0.6" : "0.2");
+        }
+
+        // Auto-animate Featured Images/Content
+        const featured = section.querySelector('.about-image-col'); 
+        if (featured) {
+            tl.from(featured, {
+                x: 50,
+                opacity: 0,
+                duration: 1.2,
+                ease: "power2.out"
+            }, "-=1");
+        }
+
+        // Auto-animate Decorative Elements (Dots, Stars, etc.)
+        const decors = section.querySelectorAll('.about-bg-elements div, .product-star, .product-star');
+        if (decors.length > 0) {
+            tl.from(decors, {
+                scale: 0,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.1,
+                ease: "back.out(2)"
+            }, "-=0.5");
+        }
+    });
+
+    // 2. Parallax Effect for all decor elements across the site
+    const decors = document.querySelectorAll('.about-star, .about-dot, .product-star');
+    decors.forEach((decor, index) => {
+        gsap.to(decor, {
+            scrollTrigger: {
+                trigger: decor.closest('section'),
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5
+            },
+            y: index % 2 === 0 ? -120 : 120,
+            ease: "none"
+        });
+    });
+
+    // 3. Footer Bottom Specific Logic
+    gsap.from(".footer-bottom", {
+        scrollTrigger: {
+            trigger: ".footer-bottom",
+            start: "top 95%",
+        },
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: "power2.out"
+    });
+};
+
+// Initialize animations
+window.addEventListener('load', revealOnScroll);
