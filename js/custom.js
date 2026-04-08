@@ -101,10 +101,10 @@ const heroSlider = new Swiper('.hero-slider', {
     loop: true,
     speed: 1000,
     parallax: true,
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: '.hero-pagination',
         clickable: true,
@@ -117,5 +117,21 @@ const heroSlider = new Swiper('.hero-slider', {
         },
     },
 });
-
-
+// Client Logo Slider
+const clientSlider = new Swiper('.client-slider', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        }
+    }
+});

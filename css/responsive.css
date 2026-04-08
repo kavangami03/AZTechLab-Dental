@@ -206,6 +206,13 @@
   .hero-slide {
     height: 600px;
   }
+  .footer-banner-section,
+  .blog-section,
+  .footer-main,
+  .client-section,
+  .product-section {
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -217,11 +224,17 @@
     --font-24: 20px;
     --font-18: 16px;
   }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 0;
+  }
+  .product-col:nth-child(3n + 2) {
+    transform: none;
+  }
 }
 
 @media (max-width: 767px) {
   :root {
-    --font-50: 28px;
     --font-42: 26px;
     --font-38: 24px;
     --font-30: 22px;
@@ -229,11 +242,6 @@
     --font-24: 19px;
     --font-18: 16px;
     --font-16: 15px;
-  }
-  .footer-banner-section,
-  .blog-section,
-  .footer-main {
-    padding: 40px 0;
   }
   .footer-banner-info p {
     padding-bottom: 20px;
@@ -244,11 +252,30 @@
   .section-title {
     margin-bottom: 30px;
   }
+  .client-section::before {
+    width: 100px;
+    height: 100px;
+    left: 40px;
+    bottom: -60px;
+  }
+  .client-section::after {
+    width: 100px;
+    height: 100px;
+    right: 40px;
+    top: -60px;
+  }
 }
 
 @media (max-width: 575px) {
+  .footer-banner-section,
+  .blog-section,
+  .footer-main,
+  .client-section,
+  .product-section {
+    padding: 40px 0;
+  }
   .footer-row {
-    gap: 40px;
+    gap: 30px;
   }
   .footer-col {
     min-width: 100%;
@@ -256,5 +283,26 @@
   .footer-bottom-inner {
     justify-content: center;
     text-align: center;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-body p {
+    margin-bottom: 16px;
+  }
+  .blog-thumb {
+    margin-bottom: 10px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .footer-title span {
+    margin-bottom: 10px;
+  }
+  .footer-col-menu ul li:not(:last-child) {
+    margin-bottom: 6px;
   }
 }
