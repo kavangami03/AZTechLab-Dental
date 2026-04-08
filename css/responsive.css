@@ -233,13 +233,18 @@
   .footer-main {
     padding: 40px 0;
   }
+  .footer-banner-section {
+    padding: 40px 0;
+  }
+  .footer-banner-info p {
+    padding-bottom: 20px;
+  }
+  .footer-banner-phone a{
+    padding: 8px 0;
+  }
 }
 
 @media (max-width: 575px) {
-  :root {
-    --font-50: 26px;
-  }
-  /* Footer Section */
   .footer-row {
     gap: 40px;
   }
