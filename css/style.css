@@ -571,6 +571,162 @@ main {
   outline: none !important;
 }
 
+/* About Section Styling */
+.about-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--clr-white);
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18%;
+  height: 100%;
+  background-color: var(--clr-blue);
+  z-index: 1;
+}
+.about-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: var(--clr-blue);
+  z-index: 1;
+}
+
+.about-bg-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.about-dot {
+  position: absolute;
+  width: 80px;
+}
+
+.about-dot.mix-dot {
+  left: 20px;
+  bottom: 122px;
+}
+
+.about-dot.white-dot {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-star {
+  position: absolute;
+  width: 30px;
+}
+
+.about-star img {
+  filter: brightness(0) invert(1) opacity(0.5); /* Make it white/subtle on blue */
+}
+
+.about-star.star-top {
+  right: 12%;
+  top: 6%;
+}
+
+.about-star.star-bottom {
+  right: 50%;
+  bottom: 8%;
+}
+
+.about-section .az-container {
+  position: relative;
+  z-index: 3;
+}
+
+.about-row {
+  display: flex;
+  align-items: start;
+  gap: 56px;
+}
+
+.about-content-col {
+  flex: 1.2;
+}
+
+.about-image-col {
+  flex: 1;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-title h2 {
+  font-size: var(--font-50);
+  font-weight: 500;
+  color: var(--clr-black);
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  margin: 0;
+}
+
+.about-title h2 span {
+  font-family: var(--header-font);
+  color: var(--clr-blue);
+}
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.about-item h3 {
+  font-size: var(--font-24);
+  font-weight: 500;
+  color: var(--clr-black);
+  font-family: var(--body-font);
+  margin-bottom: 10px;
+}
+
+.about-item h3 span {
+  font-family: var(--header-font);
+  color: var(--clr-blue);
+}
+
+.about-item p {
+  font-size: var(--font-16);
+  color: var(--clr-gray);
+  font-weight: 400;
+}
+
+.about-img-wrapper {
+  position: relative;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.about-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.about-img-wrapper:hover img {
+  transform: scale(1.03);
+}
+
 /* Footer Section */
 .footer-main {
   background-color: var(--clr-bg-blue);
