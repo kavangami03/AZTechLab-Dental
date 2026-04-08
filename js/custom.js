@@ -49,7 +49,7 @@ if (mobileTrigger && mobileMenu) {
     const toggleMenu = () => {
         const isActive = mobileMenu.classList.toggle('is-active');
         mobileTrigger.classList.toggle('is-active');
-        
+
         if (isActive) {
             tl.play();
             body.style.overflow = 'hidden';
@@ -69,11 +69,11 @@ if (mobileTrigger && mobileMenu) {
 // Mobile Submenu Accordion
 const subToggles = document.querySelectorAll('.has-mobile-submenu > a');
 subToggles.forEach(toggle => {
-    toggle.addEventListener('click', function(e) {
+    toggle.addEventListener('click', function (e) {
         e.preventDefault();
         const parent = this.parentElement;
         const subMenu = parent.querySelector('.mobile-sub-menu');
-        
+
         // Close other open submenus (True Accordion Behavior)
         const otherOpen = document.querySelectorAll('.has-mobile-submenu.is-open');
         otherOpen.forEach(openItem => {
@@ -104,7 +104,7 @@ subToggles.forEach(toggle => {
         } else {
             subMenu.style.display = 'block';
             const height = subMenu.scrollHeight;
-            gsap.fromTo(subMenu, 
+            gsap.fromTo(subMenu,
                 { height: 0 },
                 { height: height, duration: 0.3, ease: "power2.inOut" }
             );
@@ -158,7 +158,7 @@ const clientSlider = new Swiper('.client-slider', {
 const revealOnScroll = () => {
     // 1. Target all Sections
     const sections = document.querySelectorAll('section, footer');
-    
+
     sections.forEach(section => {
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -180,7 +180,7 @@ const revealOnScroll = () => {
         }
 
         // Auto-animate Content Items (Grids, Columns, etc.)
-        const contentItems = section.querySelectorAll('.product-col, .blog-column, .about-item, .client-logo-box, .footer-col, .footer-banner-content > *');
+        const contentItems = section.querySelectorAll('.product-col, .blog-column, .about-item, .client-logo-box, .footer-col > *');
         if (contentItems.length > 0) {
             tl.from(contentItems, {
                 y: 40,
@@ -192,7 +192,7 @@ const revealOnScroll = () => {
         }
 
         // Auto-animate Featured Images/Content
-        const featured = section.querySelector('.about-image-col'); 
+        const featured = section.querySelector('.about-image-col');
         if (featured) {
             tl.from(featured, {
                 x: 50,
