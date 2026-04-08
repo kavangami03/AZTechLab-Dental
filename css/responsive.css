@@ -236,4 +236,15 @@
   :root {
     --font-50: 26px;
   }
+  /* Footer Section */
+  .footer-row {
+    gap: 40px;
+  }
+  .footer-col {
+    min-width: 100%;
+  }
+  .footer-bottom-inner {
+    justify-content: center;
+    text-align: center;
+  }
 }
