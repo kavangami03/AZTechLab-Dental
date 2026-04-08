@@ -230,6 +230,9 @@
     --font-18: 16px;
     --font-16: 15px;
   }
+  .footer-main {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 575px) {

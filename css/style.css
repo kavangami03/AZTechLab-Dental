@@ -572,7 +572,7 @@ main {
 /* Footer Section */
 .footer-main {
   background-color: var(--clr-bg-blue);
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .footer-row {
@@ -611,10 +611,11 @@ main {
   gap: 14px;
 }
 
-.footer-sub-title {
+.footer-sub-title span{
   font-size: var(--font-24);
-  font-weight: 700;
-  color: var(--clr-black);
+  font-weight: 500;
+  display: block;
+  color: var(--clr-dark);
 }
 
 .footer-social-links {
@@ -648,7 +649,8 @@ main {
 }
 
 .footer-social-links a:hover img {
-  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(4882%) hue-rotate(352deg) brightness(95%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(4882%)
+    hue-rotate(352deg) brightness(95%) contrast(100%);
 }
 
 .footer-social-links a:hover {
@@ -670,7 +672,7 @@ main {
   margin: 0;
 }
 
-.footer-col-menu ul li {
+.footer-col-menu ul li:not(:last-child) {
   margin-bottom: 12px;
   position: relative;
 }
@@ -714,7 +716,7 @@ main {
   margin: 0;
 }
 
-.footer-col-contact ul li {
+.footer-col-contact ul li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -759,10 +761,9 @@ main {
 }
 
 .footer-col-contact ul li:hover .contact-icon img {
-  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(4882%) hue-rotate(352deg) brightness(95%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(4882%)
+    hue-rotate(352deg) brightness(95%) contrast(100%);
 }
-
-
 
 /* Footer Bottom Bar */
 .footer-bottom {
