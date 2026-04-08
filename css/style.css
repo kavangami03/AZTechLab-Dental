@@ -965,7 +965,7 @@ main {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 30px;
   padding-top: 50px; /* Space for the shifted items */
 }
@@ -1036,7 +1036,7 @@ main {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 46px 20px;
   text-align: left;
 }
 
