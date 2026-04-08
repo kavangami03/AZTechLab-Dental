@@ -7,7 +7,7 @@
   --clr-white: #ffffff;
   --clr-blue: #006bad;
   --clr-dark: #111111;
-  --clr-bg-blue:#F3F7FC;
+  --clr-bg-blue: #f3f7fc;
   --font-16: 16px;
   --font-18: 18px;
   --font-24: 24px;
@@ -591,14 +591,14 @@ main {
 }
 
 .footer-logo {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .footer-logo img {
   max-width: 180px;
 }
 
-.footer-desc {
+.footer-about p {
   color: var(--clr-gray);
   font-size: var(--font-16);
   line-height: 1.6;
@@ -608,14 +608,13 @@ main {
 .footer-social-box {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 }
 
 .footer-sub-title {
   font-size: var(--font-24);
   font-weight: 700;
   color: var(--clr-black);
-  margin-bottom: 20px;
 }
 
 .footer-social-links {
@@ -624,14 +623,14 @@ main {
   gap: 20px;
 }
 
-.social-icon {
+.footer-social-links a {
   display: flex;
   align-items: center;
   position: relative;
   transition: all 0.3s ease;
 }
 
-.social-icon:not(:last-child)::after {
+.footer-social-links a:not(:last-child)::after {
   content: "";
   position: absolute;
   right: -10px;
@@ -639,58 +638,83 @@ main {
   transform: translateY(-50%);
   width: 1px;
   height: 18px;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
 
-.social-icon img {
+.footer-social-links a img {
   width: 24px;
   height: auto;
-  filter: brightness(0); /* Make them black if they are not already */
+  filter: brightness(0);
 }
 
-.social-icon:hover {
+.footer-social-links a:hover img {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(4882%) hue-rotate(352deg) brightness(95%) contrast(100%);
+}
+
+.footer-social-links a:hover {
   transform: translateY(-3px);
-  opacity: 0.7;
 }
 
-
-.footer-title {
+.footer-title span {
   font-size: var(--font-24);
-  font-weight: 700;
-  color: var(--clr-black);
-  margin-bottom: 30px;
+  color: var(--clr-dark);
+  margin-bottom: 20px;
   font-family: var(--header-font);
+  display: block;
+  font-weight: 500;
 }
 
-.footer-links {
+.footer-col-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-links li {
+.footer-col-menu ul li {
   margin-bottom: 12px;
+  position: relative;
 }
 
-.footer-links a {
+.footer-col-menu ul li a {
   color: var(--clr-gray);
   font-size: var(--font-18);
   text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+
+.footer-col-menu ul li a::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background-color: var(--clr-red);
+  opacity: 0;
   transition: all 0.3s ease;
 }
 
-.footer-links a:hover {
-  color: var(--clr-blue);
-  padding-left: 5px;
+.footer-col-menu ul li:hover a {
+  color: var(--clr-red);
+  padding-left: 18px;
 }
 
-.footer-contact-list {
+.footer-col-menu ul li:hover a::before {
+  opacity: 1;
+  left: 0;
+}
+
+.footer-col-contact ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-contact-list li {
+.footer-col-contact ul li {
   margin-bottom: 20px;
 }
 
@@ -708,15 +732,37 @@ main {
 
 .contact-text span a {
   color: var(--clr-gray);
-  font-size: var(--font-18);
+  font-size: var(--font-16);
   text-decoration: none;
   line-height: 1.4;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+
+.contact-text span a::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background-color: var(--clr-blue);
+  opacity: 0;
   transition: all 0.3s ease;
 }
 
-.contact-text span a:hover {
-  color: var(--clr-blue);
+.footer-col-contact ul li:hover .contact-text span a {
+  color: var(--clr-red);
 }
+
+.footer-col-contact ul li:hover .contact-icon img {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(88%) saturate(4882%) hue-rotate(352deg) brightness(95%) contrast(100%);
+}
+
+
 
 /* Footer Bottom Bar */
 .footer-bottom {
@@ -735,14 +781,14 @@ main {
 
 .footer-copyright p,
 .footer-developer p {
-  color: var(--clr-gray);
+  color: var(--clr-dark);
   font-size: var(--font-16);
   margin: 0;
 }
 
-.dev-name {
+.footer-developer a {
   font-weight: 700;
   color: var(--clr-black);
   text-transform: uppercase;
+  cursor: pointer;
 }
-
