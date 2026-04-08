@@ -725,13 +725,12 @@ main {
 .contact-item {
   display: flex;
   gap: 15px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .contact-icon {
   width: 20px;
   flex-shrink: 0;
-  margin-top: 4px;
 }
 
 .contact-text span a {

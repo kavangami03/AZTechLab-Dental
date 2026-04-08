@@ -1,0 +1,25 @@
+<svg width="48" height="140" viewBox="0 0 48 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<circle cx="44" cy="4" r="4" transform="rotate(90 44 4)" fill="#006BAD"/>
+<circle cx="24" cy="4" r="4" transform="rotate(90 24 4)" fill="#006BAD"/>
+<circle cx="4" cy="4" r="4" transform="rotate(90 4 4)" fill="#006BAD"/>
+<circle cx="44" cy="26" r="4" transform="rotate(90 44 26)" fill="#006BAD"/>
+<circle cx="24" cy="26" r="4" transform="rotate(90 24 26)" fill="#006BAD"/>
+<circle cx="4" cy="26" r="4" transform="rotate(90 4 26)" fill="#006BAD"/>
+<circle cx="44" cy="48" r="4" transform="rotate(90 44 48)" fill="#006BAD"/>
+<circle cx="24" cy="48" r="4" transform="rotate(90 24 48)" fill="#006BAD"/>
+<circle cx="4" cy="48" r="4" transform="rotate(90 4 48)" fill="#006BAD"/>
+<circle cx="44" cy="70" r="4" transform="rotate(90 44 70)" fill="white"/>
+<circle cx="44" cy="114" r="4" transform="rotate(90 44 114)" fill="white"/>
+<circle cx="24" cy="70" r="4" transform="rotate(90 24 70)" fill="white"/>
+<circle cx="24" cy="114" r="4" transform="rotate(90 24 114)" fill="white"/>
+<circle cx="4" cy="70" r="4" transform="rotate(90 4 70)" fill="white"/>
+<circle cx="4" cy="114" r="4" transform="rotate(90 4 114)" fill="white"/>
+<circle cx="44" cy="92" r="4" transform="rotate(90 44 92)" fill="white"/>
+<circle cx="44" cy="136" r="4" transform="rotate(90 44 136)" fill="white"/>
+<circle cx="24" cy="92" r="4" transform="rotate(90 24 92)" fill="white"/>
+<circle cx="24" cy="136" r="4" transform="rotate(90 24 136)" fill="white"/>
+<circle cx="4" cy="92" r="4" transform="rotate(90 4 92)" fill="white"/>
+<circle cx="4" cy="136" r="4" transform="rotate(90 4 136)" fill="white"/>
+</g>
+</svg>
