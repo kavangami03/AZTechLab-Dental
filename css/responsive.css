@@ -230,17 +230,19 @@
     --font-18: 16px;
     --font-16: 15px;
   }
+  .footer-banner-section,
+  .blog-section,
   .footer-main {
-    padding: 40px 0;
-  }
-  .footer-banner-section {
     padding: 40px 0;
   }
   .footer-banner-info p {
     padding-bottom: 20px;
   }
-  .footer-banner-phone a{
+  .footer-banner-phone a {
     padding: 8px 0;
+  }
+  .section-title {
+    margin-bottom: 30px;
   }
 }
 
