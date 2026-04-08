@@ -53,6 +53,7 @@
   }
   /* Mobile Menu Overlay */
   .mobile-menu-overlay {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -71,7 +72,7 @@
   }
 
   .mobile-menu-overlay::-webkit-scrollbar {
-    display: none;
+    display: block;
   }
 
   .mobile-menu-close {
@@ -199,7 +200,6 @@
     font-weight: 400;
     display: block;
   }
-  
 }
 
 @media (max-width: 991px) {
