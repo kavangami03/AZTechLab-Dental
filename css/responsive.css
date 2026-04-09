@@ -288,7 +288,8 @@
   .client-section,
   .product-section,
   .about-section,
-  .about-story-section {
+  .about-story-section,
+  .about-services-section {
     padding: 60px 0;
   }
   .story-row,
@@ -305,6 +306,16 @@
   .about-story-section::before,
   .about-story-section::after {
     display: none;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-card-text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
@@ -346,6 +357,12 @@
   .about-bg-elements {
     display: none;
   }
+  .service-card {
+    padding: 16px;
+  }
+  .service-arrow-link img {
+    width: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -355,7 +372,8 @@
   .client-section,
   .product-section,
   .about-section,
-  .about-story-section {
+  .about-story-section,
+  .about-services-section {
     padding: 40px 0;
   }
   .footer-row {

@@ -1460,6 +1460,118 @@ main {
   right: 5%;
 }
 
-@media (max-width: 991px) {
+/* About Services Section Styling */
+.about-services-section {
+  padding: 80px 0;
+  background-color: var(--clr-bg-grey);
+}
 
+.about-services-section .section-title {
+  max-width: 1300px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.about-services-section .section-title h2 {
+  font-size: var(--font-42);
+  margin-bottom: 20px;
+}
+
+.about-services-section .section-title h2 span {
+  color: var(--clr-blue);
+  font-family: var(--header-font);
+}
+
+.about-services-section .section-title p {
+  max-width: 100%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: var(--clr-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-card-title-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service-icon {
+  background-color: var(--clr-red);
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.service-icon img {
+  width: 26px;
+  height: auto;
+}
+
+.service-card-title-box h3 {
+  font-size: var(--font-22);
+  margin: 0;
+  font-family: var(--body-font);
+  font-weight: 600;
+}
+
+.service-arrow-link img {
+  width: 30px;
+  height: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-arrow-link img {
+  transform: translate(3px, -3px);
+  opacity: 1;
+}
+
+.service-card-text p {
+  font-size: var(--font-18);
+  color: var(--clr-gray);
+  line-height: 155%;
+  margin-bottom: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.service-card-text p strong{
+  color: var(--clr-black);
+  font-weight: 500;
+}
+.service-card-image {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
 }
