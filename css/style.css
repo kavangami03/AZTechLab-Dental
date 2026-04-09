@@ -644,8 +644,8 @@ main::after {
 }
 
 .about-dot.mix-dot {
-  left: 20px;
-  bottom: 8vw;
+  left: 10vw;
+  bottom: 0.5vw;
 }
 
 .about-dot.white-dot {
