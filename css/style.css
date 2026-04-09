@@ -176,6 +176,33 @@ ul {
 }
 main {
   padding-top: 148px;
+  position: relative;
+}
+main::before {
+  content: "";
+  background: url(../images/mix-dot.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 40vw;
+  left: 4vw;
+  width: 50px;
+  height: 100px;
+  z-index: 9;
+}
+main::after {
+  content: "";
+  background: url(../images/star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 40vw;
+  right: 4vw;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
 }
 /* Header Styling */
 .main-header {
@@ -2636,16 +2663,16 @@ main {
 }
 
 .contact-social-links {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-social-links li {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-social-links a {
@@ -2703,93 +2730,91 @@ main {
 
 /* Premium Social Engagement Block */
 .contact-info-card.social-card {
-    background-color: var(--clr-white);
-    border: 1px solid var(--clr-bg-grey);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-bg-grey);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
 .contact-info-card.social-card:hover {
-    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-    border-color: rgba(234, 32, 39, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  border-color: rgba(234, 32, 39, 0.1);
 }
 
 .contact-info-card.social-card h3 {
-    font-size: 22px;
-    margin-bottom: 25px;
-    position: relative;
-    padding-left: 20px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 20px;
 }
 
 .contact-info-card.social-card h3::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 100%;
-    background-color: var(--clr-red);
-    border-radius: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: var(--clr-red);
+  border-radius: 2px;
 }
 
 .contact-social-links {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-social-links li {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-social-links a {
-    width: 50px;
-    height: 50px;
-    background-color: var(--clr-bg-grey);
-    color: var(--clr-black);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+  background-color: var(--clr-bg-grey);
+  color: var(--clr-black);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid transparent;
 }
 
 .contact-social-links a img {
-    width: 18px;
-    filter: brightness(0);
+  width: 18px;
+  filter: brightness(0);
 }
 
 .contact-social-links a:hover {
-    background-color: var(--clr-red);
-    color: var(--clr-white);
-    border-color: var(--clr-red);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(234, 32, 39, 0.15);
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  border-color: var(--clr-red);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(234, 32, 39, 0.15);
 }
 
 .contact-social-links a:hover img {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 /* Decorative Background element for card */
 .contact-info-card.social-card::after {
-    content: '';
-    position: absolute;
-    right: -20px;
-    bottom: -20px;
-    width: 80px;
-    height: 80px;
-    background-color: var(--clr-bg-grey);
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--clr-bg-grey);
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 0;
 }
-
-
