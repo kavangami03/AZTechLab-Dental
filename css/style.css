@@ -710,11 +710,11 @@ main {
 
 .about-img-wrapper {
   position: relative;
-  box-shadow:  8px 8px 0px rgb(255, 255, 255);
+  box-shadow: 8px 8px 0px rgb(255, 255, 255);
   border-radius: 4px;
   overflow: hidden;
   z-index: 5;
-border-radius: 0 20px;
+  border-radius: 0 20px;
 }
 
 .about-img-wrapper img {
@@ -1350,4 +1350,116 @@ border-radius: 0 20px;
   font-family: var(--header-font);
   margin: 0;
   letter-spacing: -1px;
+}
+
+/* About Story Section Styling */
+.about-story-section {
+  padding: 80px 0;
+  background-color: var(--clr-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.story-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* The Magic Trick: Alternating Rows */
+.story-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.story-image-col {
+  flex: 1;
+}
+
+.story-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.story-content-col {
+  flex: 1.2;
+}
+
+.story-title {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.story-title h2 {
+  font-size: var(--font-30);
+  font-weight: 500;
+  color: var(--clr-black);
+  font-family: var(--body-font);
+}
+
+.story-title h2 span {
+  font-family: var(--header-font);
+  color: var(--clr-blue);
+}
+
+.story-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--clr-black);
+}
+
+.story-text p {
+  font-size: var(--font-18);
+  color: var(--clr-gray);
+  line-height: 155%;
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.story-text p strong {
+  color: var(--clr-gray);
+}
+
+/* Decorative Elements */
+.about-story-section::before,
+.about-story-section::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-blue);
+  mask-image: url("../images/star.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("../images/star.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  pointer-events: none;
+  /* z-index: 1; */
+}
+
+.about-story-section::before {
+  top: 15%;
+  left: 5%;
+}
+
+.about-story-section::after {
+  bottom: 10%;
+  right: 5%;
+}
+
+@media (max-width: 991px) {
+
 }
