@@ -1328,3 +1328,26 @@ border-radius: 0 20px;
   text-transform: uppercase;
   cursor: pointer;
 }
+
+/* Page Banner Styling */
+.page-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-banner-content h1 {
+  font-size: var(--font-80);
+  font-weight: 600;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-family: var(--header-font);
+  margin: 0;
+  letter-spacing: -1px;
+}
