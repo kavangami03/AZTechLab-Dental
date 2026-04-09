@@ -229,18 +229,6 @@ const revealOnScroll = () => {
             ease: "none"
         });
     });
-
-    // 3. Footer Bottom Specific Logic
-    gsap.from(".footer-bottom", {
-        scrollTrigger: {
-            trigger: ".footer-bottom",
-            start: "top 95%",
-        },
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        ease: "power2.out"
-    });
 };
 
 // Initialize animations
