@@ -2296,7 +2296,7 @@ main::after {
 
 .service-detail article h2,
 .service-detail aside h2 {
-  font-size: 24px;
+  font-size: var(--font-28);
   color: var(--clr-black);
   margin: 30px 0 15px;
   border-left: 5px solid var(--clr-red);
@@ -2311,7 +2311,7 @@ main::after {
 
 .service-detail article ul li {
   padding: 10px 0;
-  font-size: 16px;
+  font-size: var(--font-16);
   color: var(--clr-gray);
   border-bottom: 1px solid var(--clr-bg-grey);
   list-style-type: disc;
@@ -2345,7 +2345,7 @@ main::after {
 .service-detail aside table th,
 .service-detail aside table td {
   padding: 12px 0;
-  font-size: 14px;
+  font-size: var(--font-14);
 }
 
 .service-detail aside table th {
@@ -2371,7 +2371,7 @@ main::after {
   position: relative;
   padding-left: 45px;
   margin-bottom: 15px;
-  font-size: 13px;
+  font-size: var(--font-14);
   color: var(--clr-gray);
 }
 
@@ -2395,29 +2395,29 @@ main::after {
 .service-detail aside ol li strong {
   color: var(--clr-black);
   display: block;
-  font-size: 15px;
+  font-size: var(--font-16);
 }
 
 .service-detail article h3 {
-  font-size: 28px;
+  font-size: var(--font-24);
   color: var(--clr-blue);
   margin: 40px 0 15px;
 }
 
 .service-detail article h4 {
-  font-size: 24px;
+  font-size: var(--font-22);
   color: var(--clr-black);
   margin: 30px 0 12px;
 }
 
 .service-detail article h5 {
-  font-size: 20px;
+  font-size: var(--font-22);
   color: var(--clr-red);
   margin: 25px 0 10px;
 }
 
 .service-detail article h6 {
-  font-size: 18px;
+  font-size: var(--font-18);
   color: var(--clr-gray);
   margin: 20px 0 10px;
   text-transform: uppercase;
@@ -2436,7 +2436,7 @@ main::after {
   position: relative;
   padding-left: 30px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: var(--font-16);
   color: var(--clr-gray);
   line-height: 1.6;
 }
@@ -2449,7 +2449,7 @@ main::after {
   font-family: var(--header-font);
   font-weight: 800;
   color: var(--clr-red);
-  font-size: 14px;
+  font-size: var(--font-14);
 }
 
 .service-detail article a {
@@ -2482,14 +2482,14 @@ main::after {
 .service-detail article table th {
   padding: 10px;
   text-align: left;
-  font-size: 14px;
+  font-size: var(--font-14);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .service-detail article table td {
   padding: 10px;
-  font-size: 14px;
+  font-size: var(--font-14);
   color: var(--clr-gray);
   border-bottom: 1px solid var(--clr-bg-grey);
 }
@@ -2542,7 +2542,7 @@ main::after {
 }
 
 .contact-form label {
-  font-size: 14px;
+  font-size: var(--font-14);
   font-weight: 700;
   color: var(--clr-black);
   text-transform: uppercase;
@@ -2556,7 +2556,7 @@ main::after {
   padding: 15px 20px;
   border: 1px solid var(--clr-bg-grey);
   border-radius: 8px;
-  font-size: 15px;
+  font-size: var(--font-16);
   transition: all 0.3s ease;
   background-color: #fcfcfc;
 }
@@ -2583,7 +2583,7 @@ main::after {
 }
 
 .info-card-header h3 {
-  font-size: 24px;
+  font-size: var(--font-24);
   margin-bottom: 30px;
   display: flex;
   gap: 8px;
@@ -2621,7 +2621,7 @@ main::after {
 
 .detail-text strong {
   display: block;
-  font-size: 13px;
+  font-size: var(--font-14);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--clr-red);
@@ -2629,7 +2629,7 @@ main::after {
 }
 
 .detail-text p {
-  font-size: 16px;
+  font-size: var(--font-16);
   color: var(--clr-black);
   margin: 0;
   line-height: 1.5;
@@ -2658,7 +2658,7 @@ main::after {
 }
 
 .contact-social-header h3 {
-  font-size: 30px;
+  font-size: var(--font-30);
   margin-bottom: 25px;
 }
 
@@ -2724,7 +2724,7 @@ main::after {
 }
 
 .contact-social-card h3 {
-  font-size: 20px;
+  font-size: var(--font-22);
   margin-bottom: 20px;
 }
 
@@ -2743,7 +2743,7 @@ main::after {
 }
 
 .contact-info-card.social-card h3 {
-  font-size: 22px;
+  font-size: var(--font-22);
   margin-bottom: 25px;
   position: relative;
   padding-left: 20px;
@@ -2783,7 +2783,7 @@ main::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: var(--font-22);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: 1px solid transparent;
 }
